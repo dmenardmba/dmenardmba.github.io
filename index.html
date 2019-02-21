@@ -49,19 +49,27 @@
     // code block
         
     var x = document.getElementById(carname);
-    
-    var userImage = "Jaguar.jpg";
-    document.getElementById("img1").innerHTML="<img src='+userImage+'>"        
+     
         
 } 
-    
-    
-    
+   
   </script>
 </head>
+  
+  <td id="img1></td>
+
+<script>
+
+var userID = prompt("Enter the ID of the user you want to search for.");
+
+var userImage = "https://storage.brick-hill.com/images/avatars/" + userID + ".png";
+
+document.getElementById("img1").innerHTML="<img src='+userImage+'>"
+
+</script>
 
 <body>
-Hello, your electric car should be::::
+Hello, your electric car should be:::::
     <h1>
       <script type="text/javascript">
         document.write(carname)
