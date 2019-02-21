@@ -48,24 +48,9 @@
          var carname = '2019 Ram 1500 with eTorque';
     // code block
 } 
-// Get a reference to the placeholder:
-var placeholder = document.getElementById("placeholder");
-
-// Dynamically create and configure the new image
-var img = document.createElement("img");
-
-img.classList.add("hidden");
-
-// Set up a load event handler that will unhide the image once its loaded
-img.addEventListener("load", function(){
-  this.classList.remove("hidden");
-});
-
-// Inject the image into the document
-placeholder.appendChild(img);
-
-// Update the source of that image (which will cause the load event to trigger)
-img.src = "Jaguar.jpg";
+var img = new Image();
+img.src=carimage;
+document.body.appendChild(img);
  
   </script>
 </head>
